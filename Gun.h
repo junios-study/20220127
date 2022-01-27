@@ -16,7 +16,15 @@ public:
 
 	int Bullet;
 
-	void Shot();
+	virtual void Attack() override
+	{
+		Shot();
+		Weapon::Attack();
+	}
+
+protected:
+	virtual void Shot();
+
 };
 #endif
 

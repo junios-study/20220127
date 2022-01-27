@@ -10,7 +10,14 @@ public:
 	Sword();
 	virtual ~Sword();
 
-	void Pierce();
+	virtual void Attack() override
+	{
+		Weapon::Attack();
+		Pierce();
+	}
+
+protected:
+	virtual void Pierce();
 };
 
 #endif

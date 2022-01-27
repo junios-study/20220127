@@ -15,7 +15,8 @@ public:
 	Weapon();
 	virtual ~Weapon();
 
-	void Attack();
+	//자식 클래스에서 재정의 가능함, 
+	virtual void Attack();
 
 	EMaterials Material = EMaterials::Metal;
 };

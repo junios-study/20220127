@@ -16,5 +16,6 @@ Gun::~Gun()
 
 void Gun::Shot()
 {
+
 	cout << "น฿ป็" << endl;
 }
