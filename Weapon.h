@@ -15,6 +15,8 @@ public:
 	Weapon();
 	virtual ~Weapon();
 
+	void Attack();
+
 	EMaterials Material = EMaterials::Metal;
 };
 #endif
